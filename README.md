@@ -1,6 +1,8 @@
 # AWS EC2 Instance Terraform module
 
 Terraform module which creates an EC2 instance on AWS.
+My Fork is not supporting any political vision.
+Just code and usefull modules.
 
 ## Usage
 
