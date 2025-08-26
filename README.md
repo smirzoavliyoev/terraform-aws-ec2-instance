@@ -2,8 +2,6 @@
 
 Terraform module which creates an EC2 instance on AWS.
 
-[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
-
 ## Usage
 
 ### Single EC2 Instance
@@ -253,7 +251,6 @@ No modules.
 | <a name="input_placement_partition_number"></a> [placement\_partition\_number](#input\_placement\_partition\_number) | Number of the partition the instance is in. Valid only if the `aws_placement_group` resource's `strategy` argument is set to `partition` | `number` | `null` | no |
 | <a name="input_private_dns_name_options"></a> [private\_dns\_name\_options](#input\_private\_dns\_name\_options) | Customize the private DNS name options of the instance | <pre>object({<br/>    enable_resource_name_dns_a_record    = optional(bool)<br/>    enable_resource_name_dns_aaaa_record = optional(bool)<br/>    hostname_type                        = optional(string)<br/>  })</pre> | `null` | no |
 | <a name="input_private_ip"></a> [private\_ip](#input\_private\_ip) | Private IP address to associate with the instance in a VPC | `string` | `null` | no |
-| <a name="input_putin_khuylo"></a> [putin\_khuylo](#input\_putin\_khuylo) | Do you agree that Putin doesn't respect Ukrainian sovereignty and territorial integrity? More info: https://en.wikipedia.org/wiki/Putin_khuylo! | `bool` | `true` | no |
 | <a name="input_region"></a> [region](#input\_region) | Region where the resource(s) will be managed. Defaults to the Region set in the provider configuration | `string` | `null` | no |
 | <a name="input_root_block_device"></a> [root\_block\_device](#input\_root\_block\_device) | Customize details about the root block device of the instance. See Block Devices below for details | <pre>object({<br/>    delete_on_termination = optional(bool)<br/>    encrypted             = optional(bool)<br/>    iops                  = optional(number)<br/>    kms_key_id            = optional(string)<br/>    tags                  = optional(map(string))<br/>    throughput            = optional(number)<br/>    size                  = optional(number)<br/>    type                  = optional(string)<br/>  })</pre> | `null` | no |
 | <a name="input_secondary_private_ips"></a> [secondary\_private\_ips](#input\_secondary\_private\_ips) | A list of secondary private IPv4 addresses to assign to the instance's primary network interface (eth0) in a VPC. Can only be assigned to the primary network interface (eth0) attached at instance creation, not a pre-existing network interface i.e. referenced in a `network_interface block` | `list(string)` | `null` | no |
@@ -326,8 +323,3 @@ Module is maintained by [Anton Babenko](https://github.com/antonbabenko) with he
 
 Apache 2 Licensed. See [LICENSE](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance/tree/master/LICENSE) for full details.
 
-## Additional information for users from Russia and Belarus
-
-* Russia has [illegally annexed Crimea in 2014](https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation) and [brought the war in Donbas](https://en.wikipedia.org/wiki/War_in_Donbas) followed by [full-scale invasion of Ukraine in 2022](https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine).
-* Russia has brought sorrow and devastations to millions of Ukrainians, killed hundreds of innocent people, damaged thousands of buildings, and forced several million people to flee.
-* [Putin khuylo!](https://en.wikipedia.org/wiki/Putin_khuylo!)
